@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Http\Resources;
+
+use Illuminate\Http\Request;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class ModelsResources extends JsonResource
+{
+    /**
+     * Transform the resource into an array.
+     *
+     * @return array<string, mixed>
+     */
+    public function toArray(Request $request): array
+    {
+        $mqr=$this->Mareque()->first();
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'Mareque' => $mqr!=null?  $mqr->name:"",
+            'User'=>$this->User()->first('fullname'),
+            'created_at'=>$this->created_at,
+        ];
+    }
+}

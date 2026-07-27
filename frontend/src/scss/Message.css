@@ -1,0 +1,14 @@
+.my-container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 16px;
+ 
+  background : rgba(233, 228, 228, 0.16);
+    background-color:rgb(249, 245, 245);
+    border-radius: 10px;
+    animation: fadein 2s;
+  }
+  
+  @keyframes fadein {
+    from { background : rgb(254, 254, 253)}
+    to   { background : rgba(233, 228, 228, 0.16); }
+  }

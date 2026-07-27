@@ -1,0 +1,10 @@
+.image_picker {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ .checkboxWrapper {
+    display:none;
+}

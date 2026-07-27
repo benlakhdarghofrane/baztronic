@@ -1,0 +1,16 @@
+@media (min-width: 550px) {
+    .modifierbutn {
+        display: flex;
+        justify-content: space-evenly;
+   
+    }
+}
+@media (max-width: 550px) {
+    .modifierbutn{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

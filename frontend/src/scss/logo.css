@@ -1,0 +1,14 @@
+
+@media (max-width: 500px) {
+    .dashboardlogo {
+        justify-self: unset;
+        width: 60dvw;
+        height: 60dvw;
+    }
+}
+@media (min-width: 500px) {
+    .dashboardlogo{
+        width: 35dvw;
+        height: 35dvw;
+    }
+}
